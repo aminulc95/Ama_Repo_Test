@@ -37,15 +37,14 @@ public class BookingWebsite extends Base{
 	public void ClickSearchBttn() {
 		driver.findElement(By.xpath("//*[@id=\"frm\"]/div[1]/div[4]/div[2]/button")).click();
 	}
-	public void SelectingRoom() {
-		 WebDriverWait wait = new WebDriverWait(driver, 10);
-			WebElement WaitingForSearchBox = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\\\"frm\\\"]/div[1]/h2")));
-	driver.findElement(By.xpath(""));
+	public void SelectingRoom() throws InterruptedException {
+Thread.sleep(5000);
+	driver.findElement(By.xpath("//a[@data-click-store-id=\"sr-compset-181844\"]")).click();
 	}
 	
 	
 	@Test
-	public void TestingFirstThree() {
+	public void TestingFirstThree() throws InterruptedException {
 		GoToWebsite();
 		EnterDestination();
 		ClickCheckInCheckOutDate();
