@@ -3,13 +3,13 @@
 <suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Pages.BookingWebsite">
+      <class name="Pages.AutoTrader">
         <methods>
           <include name="beforeEachTest"/>
-          <include name="TestingFirstThree"/>
           <include name="afterEachTest"/>
+          <include name="AllTests"/>
         </methods>
-      </class> <!-- Pages.BookingWebsite -->
+      </class> <!-- Pages.AutoTrader -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
