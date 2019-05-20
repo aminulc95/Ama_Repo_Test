@@ -23,7 +23,7 @@ public class AutoTrader extends Base {
 		GroceryOption.click();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//*[@id=\"postal-code-input\"]")).sendKeys("22191");
-		//Thread.sleep(5000);
+		Thread.sleep(5000);
 		driver.findElement(By.xpath("//*[@id=\"postal-code-submit\"]")).click();
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//*[@id=\"search-results\"]/div[6]/div/div/div[1]/div[2]/div[5]/a")).click();
@@ -42,7 +42,7 @@ public class AutoTrader extends Base {
 		driver.findElement(By.xpath("//*[@id=\"shopCartCheckoutSubmitButton\"]")).click();
 		
 	}
-
+//
 	@Test
 	public void AllTests() throws InterruptedException {
 		GoToWebSite();
