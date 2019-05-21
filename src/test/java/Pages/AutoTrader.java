@@ -41,7 +41,7 @@ public class AutoTrader extends Base {
 		assertEquals(PB, "Kirkland Signature Organic Peanut Butter, 28 oz, 2-count");
 		driver.findElement(By.xpath("//*[@id=\"shopCartCheckoutSubmitButton\"]")).click();
 	}
-
+//
 	@Test
 	public void AllTests() throws InterruptedException {
 		GoToWebSite();
