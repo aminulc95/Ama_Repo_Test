@@ -41,11 +41,7 @@ public class BookingWebsite extends Base{
 Thread.sleep(5000);
 	driver.findElement(By.xpath("//a[@data-click-store-id=\"sr-compset-181844\"]")).click();
 	}
-	
-	//This is a change can you see this on your side?
-	//Yes I can see this on my side
-	
-	
+
 	@Test
 	public void TestingFirstThree() throws InterruptedException {
 		GoToWebsite();
