@@ -15,6 +15,7 @@ local.properties
 .loadpath
 .recommenders
 /test-classes/
+/test-output/
 
 # External tool builders
 .externalToolBuilders/
