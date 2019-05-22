@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 import Library.Base;
 
 public class AutoTrader extends Base {
-
+//
 	public void GoToWebSite() throws InterruptedException {
 		driver.get("https://www.costco.com/");
 		Thread.sleep(5000);
