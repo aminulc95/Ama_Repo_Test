@@ -17,7 +17,7 @@ import Library.Base;
 public class Greyhound extends Base {
 
 	public void GoToWebsite() {
-		driver.get("https://www.greyhound.com/");
+		driver.get("https://www.greyhound.com/en");
 	}
 
 	public void ClickBookATrip() throws InterruptedException {
@@ -43,7 +43,7 @@ public class Greyhound extends Base {
 	public void EntertoBox() throws InterruptedException {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement ToTextBox = wait
-				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//*[@id=\"toLocation\"]")));
+				.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//input[@id='toLocation']")));
 		ToTextBox.sendKeys("New York");
 		ToTextBox.sendKeys(Keys.ARROW_DOWN);
 		ToTextBox.sendKeys(Keys.ENTER);
@@ -83,15 +83,27 @@ public class Greyhound extends Base {
 		ChildrenPlusBttn.click();
 
 	}
+	
+	public void ClickOnAllDiscountOption() throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver, 10);		
+		Select DiscountBoxselect = new Select(driver.findElement(By.xpath("//select[@id='ff-travel-discountoptions']")));
+		DiscountBoxselect.selectByValue("student");
+		Thread.sleep(1000);
+		DiscountBoxselect.selectByValue("veteran");
+		Thread.sleep(1000);
+		DiscountBoxselect.selectByValue("no-discount");
+		Thread.sleep(1000);	
+	}
 
 	@Test
 	public void GreyHoundBus() throws InterruptedException {
 		GoToWebsite();
-		ClickBookATrip();
-		EnterFromBox();
-		EntertoBox();
-		DepartOn();
-		ReturnOn();
-		PasssengerCount();
+	//	ClickBookATrip();
+	//	EnterFromBox();
+	//	EntertoBox();
+	//	DepartOn();
+	//	ReturnOn();
+	//	PasssengerCount();
+		ClickOnAllDiscountOption();
 	}
 }
