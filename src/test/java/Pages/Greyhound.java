@@ -94,16 +94,28 @@ public class Greyhound extends Base {
 		DiscountBoxselect.selectByValue("no-discount");
 		Thread.sleep(1000);	
 	}
+	public void EnterPromoCodeThenEraseIt() throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(driver, 10);		
+		 WebElement PromoCodeBox = driver.findElement(By.xpath("//*[@id=\"ff-travel-promocode\"]"));
+		PromoCodeBox.sendKeys("Honey2019");
+		Thread.sleep(2000);
+		PromoCodeBox.clear();
+	}
+	public void ClickSearchBttn() {
+		driver.findElement(By.xpath("//*[@id=\"fare-search-btn\"]")).click();
+	}
 
 	@Test
 	public void GreyHoundBus() throws InterruptedException {
 		GoToWebsite();
-	//	ClickBookATrip();
-	//	EnterFromBox();
-	//	EntertoBox();
-	//	DepartOn();
-	//	ReturnOn();
-	//	PasssengerCount();
-		ClickOnAllDiscountOption();
+		ClickBookATrip();
+		EnterFromBox();
+	 EntertoBox();
+		DepartOn();
+		ReturnOn();
+		PasssengerCount();
+		//ClickOnAllDiscountOption();
+		EnterPromoCodeThenEraseIt();
+		ClickSearchBttn();
 	}
 }
