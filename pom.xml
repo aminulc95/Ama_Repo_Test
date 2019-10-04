@@ -18,90 +18,90 @@
 
 
 
-		<dependency>
+<dependency>
 
-			<groupId>org.testng</groupId>
+<groupId>org.testng</groupId>
 
-			<artifactId>testng</artifactId>
+<artifactId>testng</artifactId>
 
-			<version>6.13.1</version>
+<version>6.13.1</version>
 
-			<scope>test</scope>
+<scope>test</scope>
 
-		</dependency>
+</dependency>
 
 		<!-- This is log4j dependency library -->
 
 
 
-		<dependency>
+<dependency>
 
-			<groupId>log4j</groupId>
+<groupId>log4j</groupId>
 
-			<artifactId>log4j</artifactId>
+<artifactId>log4j</artifactId>
 
-			<version>1.2.17</version>
+<version>1.2.17</version>
 
-		</dependency>
+</dependency>
 
-		<dependency>
+<dependency>
 
-			<groupId>javax.mail</groupId>
+<groupId>javax.mail</groupId>
 
-			<artifactId>mail</artifactId>
+<artifactId>mail</artifactId>
 
-			<version>1.4.7</version>
+<version>1.4.7</version>
 
-		</dependency>
+</dependency>
 
-		<dependency>
+<dependency>
 
-			<groupId>net.sourceforge.jexcelapi</groupId>
+<groupId>net.sourceforge.jexcelapi</groupId>
 
-			<artifactId>jxl</artifactId>
+<artifactId>jxl</artifactId>
 
-			<version>2.6.12</version>
+<version>2.6.12</version>
 
-		</dependency>
-
-
-		<dependency>
-
-			<groupId>org.apache.poi</groupId>
-
-			<artifactId>poi</artifactId>
-
-			<version>3.15</version>
-
-		</dependency>
+</dependency>
 
 
-		<dependency>
+<dependency>
 
-			<groupId>org.apache.poi</groupId>
+<groupId>org.apache.poi</groupId>
 
-			<artifactId>poi-ooxml</artifactId>
+<artifactId>poi</artifactId>
 
-			<version>3.15</version>
+<version>3.15</version>
 
-		</dependency>
+</dependency>
 
 
-		<dependency>
+<dependency>
 
-			<groupId>com.aventstack</groupId>
+<groupId>org.apache.poi</groupId>
 
-			<artifactId>extentreports</artifactId>
+<artifactId>poi-ooxml</artifactId>
 
-			<version>3.0.1</version>
+<version>3.15</version>
 
-		</dependency>
-		
-				<dependency>
-			<groupId>com.relevantcodes</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>2.41.2</version>
-		</dependency>
+</dependency>
+
+
+<dependency>
+
+<groupId>com.aventstack</groupId>
+
+<artifactId>extentreports</artifactId>
+
+<version>3.0.1</version>
+
+</dependency>
+
+<dependency>
+<groupId>com.relevantcodes</groupId>
+<artifactId>extentreports</artifactId>
+<version>2.41.2</version>
+</dependency>
 
 
 <dependency>
@@ -110,16 +110,16 @@
 <version>2.6</version>
 </dependency>
 
-	</dependencies>
+		</dependencies>
 
 
-	<properties>
+<properties>
 
-		<maven.compiler.source>1.8</maven.compiler.source>
+<maven.compiler.source>1.8</maven.compiler.source>
 
-		<maven.compiler.target>1.8</maven.compiler.target>
+<maven.compiler.target>1.8</maven.compiler.target>
 
-	</properties>
+</properties>
   
   
   
